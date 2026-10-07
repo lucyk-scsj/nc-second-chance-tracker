@@ -1,0 +1,233 @@
+fiscal_year,statute,description,category,count,source
+2017-18,15A-145,"Misdemeanor, first offender under 18",other,4,AOC 2022 Expunctions Report
+2017-18,15A-145(A),"Misdemeanor, first offender under 18",other,177,AOC 2022 Expunctions Report
+2017-18,15A-145.1,"Gang offense, under 18",other,0,AOC 2022 Expunctions Report
+2017-18,15A-145.2,"Drug offenses, first offender",other,3,AOC 2022 Expunctions Report
+2017-18,15A-145.2(A),"Drug offenses, first offender",other,36,AOC 2022 Expunctions Report
+2017-18,15A-145.2(B),"Drug offenses, first offender",other,59,AOC 2022 Expunctions Report
+2017-18,15A-145.2(C),"Drug offenses, first offender",other,52,AOC 2022 Expunctions Report
+2017-18,15A-145.3,Toxic vapors,other,1,AOC 2022 Expunctions Report
+2017-18,15A-145.3(A),Toxic vapors,other,0,AOC 2022 Expunctions Report
+2017-18,15A-145.3(B),Toxic vapors,other,33,AOC 2022 Expunctions Report
+2017-18,15A-145.3(C),Toxic vapors,other,4,AOC 2022 Expunctions Report
+2017-18,15A-145.4,"Nonviolent felony, under 18",other,27,AOC 2022 Expunctions Report
+2017-18,15A-145.5,Nonviolent misdemeanors/felonies (adult convictions),adult_conviction,629,AOC 2022 Expunctions Report
+2017-18,15A-145.6,Prostitution,other,0,AOC 2022 Expunctions Report
+2017-18,15A-145.7,Human trafficking victims,other,0,AOC 2022 Expunctions Report
+2017-18,15A-145.8,Offenses committed under age 18,other,0,AOC 2022 Expunctions Report
+2017-18,15A-145.8(A),Offenses committed under age 18,other,0,AOC 2022 Expunctions Report
+2017-18,15A-145.8(B),Offenses committed under age 18,other,0,AOC 2022 Expunctions Report
+2017-18,15A-145.8A,Convictions at age 16-17 (Second Chance Act),youth_conviction,0,AOC 2022 Expunctions Report
+2017-18,15A-145.9,Other (see statute),other,0,AOC 2022 Expunctions Report
+2017-18,15A-146,Dismissal / not guilty (general),petition_nonconviction,9755,AOC 2022 Expunctions Report
+2017-18,15A-146(A/A1),"Dismissal / not guilty, by petition",petition_nonconviction,726,AOC 2022 Expunctions Report
+2017-18,15A-146(A2),"Dismissal / not guilty, by petition",petition_nonconviction,35,AOC 2022 Expunctions Report
+2017-18,15A-146(A4),Automatic: dismissal / not guilty,automatic,0,AOC 2022 Expunctions Report
+2017-18,15A-147,Identity theft / mistaken identity,other,833,AOC 2022 Expunctions Report
+2017-18,15A-147(A),Identity theft / mistaken identity,other,8,AOC 2022 Expunctions Report
+2017-18,15A-147(A1),Identity theft / mistaken identity,other,369,AOC 2022 Expunctions Report
+2017-18,15A-148,DNA records,other,0,AOC 2022 Expunctions Report
+2017-18,15A-149,Pardon of innocence,other,0,AOC 2022 Expunctions Report
+2018-19,15A-145,"Misdemeanor, first offender under 18",other,0,AOC 2022 Expunctions Report
+2018-19,15A-145(A),"Misdemeanor, first offender under 18",other,137,AOC 2022 Expunctions Report
+2018-19,15A-145.1,"Gang offense, under 18",other,1,AOC 2022 Expunctions Report
+2018-19,15A-145.2,"Drug offenses, first offender",other,5,AOC 2022 Expunctions Report
+2018-19,15A-145.2(A),"Drug offenses, first offender",other,47,AOC 2022 Expunctions Report
+2018-19,15A-145.2(B),"Drug offenses, first offender",other,64,AOC 2022 Expunctions Report
+2018-19,15A-145.2(C),"Drug offenses, first offender",other,40,AOC 2022 Expunctions Report
+2018-19,15A-145.3,Toxic vapors,other,1,AOC 2022 Expunctions Report
+2018-19,15A-145.3(A),Toxic vapors,other,1,AOC 2022 Expunctions Report
+2018-19,15A-145.3(B),Toxic vapors,other,30,AOC 2022 Expunctions Report
+2018-19,15A-145.3(C),Toxic vapors,other,2,AOC 2022 Expunctions Report
+2018-19,15A-145.4,"Nonviolent felony, under 18",other,25,AOC 2022 Expunctions Report
+2018-19,15A-145.5,Nonviolent misdemeanors/felonies (adult convictions),adult_conviction,1057,AOC 2022 Expunctions Report
+2018-19,15A-145.6,Prostitution,other,4,AOC 2022 Expunctions Report
+2018-19,15A-145.7,Human trafficking victims,other,1,AOC 2022 Expunctions Report
+2018-19,15A-145.8,Offenses committed under age 18,other,0,AOC 2022 Expunctions Report
+2018-19,15A-145.8(A),Offenses committed under age 18,other,0,AOC 2022 Expunctions Report
+2018-19,15A-145.8(B),Offenses committed under age 18,other,0,AOC 2022 Expunctions Report
+2018-19,15A-145.8A,Convictions at age 16-17 (Second Chance Act),youth_conviction,0,AOC 2022 Expunctions Report
+2018-19,15A-145.9,Other (see statute),other,0,AOC 2022 Expunctions Report
+2018-19,15A-146,Dismissal / not guilty (general),petition_nonconviction,49,AOC 2022 Expunctions Report
+2018-19,15A-146(A/A1),"Dismissal / not guilty, by petition",petition_nonconviction,12236,AOC 2022 Expunctions Report
+2018-19,15A-146(A2),"Dismissal / not guilty, by petition",petition_nonconviction,537,AOC 2022 Expunctions Report
+2018-19,15A-146(A4),Automatic: dismissal / not guilty,automatic,0,AOC 2022 Expunctions Report
+2018-19,15A-147,Identity theft / mistaken identity,other,2,AOC 2022 Expunctions Report
+2018-19,15A-147(A),Identity theft / mistaken identity,other,18,AOC 2022 Expunctions Report
+2018-19,15A-147(A1),Identity theft / mistaken identity,other,1288,AOC 2022 Expunctions Report
+2018-19,15A-148,DNA records,other,0,AOC 2022 Expunctions Report
+2018-19,15A-149,Pardon of innocence,other,0,AOC 2022 Expunctions Report
+2019-20,15A-145,"Misdemeanor, first offender under 18",other,0,AOC 2022 Expunctions Report
+2019-20,15A-145(A),"Misdemeanor, first offender under 18",other,73,AOC 2022 Expunctions Report
+2019-20,15A-145.1,"Gang offense, under 18",other,0,AOC 2022 Expunctions Report
+2019-20,15A-145.2,"Drug offenses, first offender",other,4,AOC 2022 Expunctions Report
+2019-20,15A-145.2(A),"Drug offenses, first offender",other,32,AOC 2022 Expunctions Report
+2019-20,15A-145.2(B),"Drug offenses, first offender",other,29,AOC 2022 Expunctions Report
+2019-20,15A-145.2(C),"Drug offenses, first offender",other,27,AOC 2022 Expunctions Report
+2019-20,15A-145.3,Toxic vapors,other,0,AOC 2022 Expunctions Report
+2019-20,15A-145.3(A),Toxic vapors,other,0,AOC 2022 Expunctions Report
+2019-20,15A-145.3(B),Toxic vapors,other,13,AOC 2022 Expunctions Report
+2019-20,15A-145.3(C),Toxic vapors,other,0,AOC 2022 Expunctions Report
+2019-20,15A-145.4,"Nonviolent felony, under 18",other,19,AOC 2022 Expunctions Report
+2019-20,15A-145.5,Nonviolent misdemeanors/felonies (adult convictions),adult_conviction,802,AOC 2022 Expunctions Report
+2019-20,15A-145.6,Prostitution,other,3,AOC 2022 Expunctions Report
+2019-20,15A-145.7,Human trafficking victims,other,0,AOC 2022 Expunctions Report
+2019-20,15A-145.8,Offenses committed under age 18,other,0,AOC 2022 Expunctions Report
+2019-20,15A-145.8(A),Offenses committed under age 18,other,0,AOC 2022 Expunctions Report
+2019-20,15A-145.8(B),Offenses committed under age 18,other,0,AOC 2022 Expunctions Report
+2019-20,15A-145.8A,Convictions at age 16-17 (Second Chance Act),youth_conviction,0,AOC 2022 Expunctions Report
+2019-20,15A-145.9,Other (see statute),other,0,AOC 2022 Expunctions Report
+2019-20,15A-146,Dismissal / not guilty (general),petition_nonconviction,10,AOC 2022 Expunctions Report
+2019-20,15A-146(A/A1),"Dismissal / not guilty, by petition",petition_nonconviction,10598,AOC 2022 Expunctions Report
+2019-20,15A-146(A2),"Dismissal / not guilty, by petition",petition_nonconviction,449,AOC 2022 Expunctions Report
+2019-20,15A-146(A4),Automatic: dismissal / not guilty,automatic,0,AOC 2022 Expunctions Report
+2019-20,15A-147,Identity theft / mistaken identity,other,0,AOC 2022 Expunctions Report
+2019-20,15A-147(A),Identity theft / mistaken identity,other,11,AOC 2022 Expunctions Report
+2019-20,15A-147(A1),Identity theft / mistaken identity,other,1450,AOC 2022 Expunctions Report
+2019-20,15A-148,DNA records,other,0,AOC 2022 Expunctions Report
+2019-20,15A-149,Pardon of innocence,other,0,AOC 2022 Expunctions Report
+2020-21,15A-145,"Misdemeanor, first offender under 18",other,2,AOC 2025 Expunctions Report
+2020-21,15A-145(A),"Misdemeanor, first offender under 18",other,50,AOC 2025 Expunctions Report
+2020-21,15A-145.1,"Gang offense, under 18",other,0,AOC 2025 Expunctions Report
+2020-21,15A-145.2,"Drug offenses, first offender",other,0,AOC 2025 Expunctions Report
+2020-21,15A-145.2(A),"Drug offenses, first offender",other,32,AOC 2025 Expunctions Report
+2020-21,15A-145.2(B),"Drug offenses, first offender",other,24,AOC 2025 Expunctions Report
+2020-21,15A-145.2(C),"Drug offenses, first offender",other,42,AOC 2025 Expunctions Report
+2020-21,15A-145.3,Toxic vapors,other,0,AOC 2025 Expunctions Report
+2020-21,15A-145.3(A),Toxic vapors,other,0,AOC 2025 Expunctions Report
+2020-21,15A-145.3(B),Toxic vapors,other,11,AOC 2025 Expunctions Report
+2020-21,15A-145.3(C),Toxic vapors,other,0,AOC 2025 Expunctions Report
+2020-21,15A-145.4,"Nonviolent felony, under 18",other,9,AOC 2025 Expunctions Report
+2020-21,15A-145.5,Nonviolent misdemeanors/felonies (adult convictions),adult_conviction,1022,AOC 2025 Expunctions Report
+2020-21,15A-145.6,Prostitution,other,0,AOC 2025 Expunctions Report
+2020-21,15A-145.7,Human trafficking victims,other,1,AOC 2025 Expunctions Report
+2020-21,15A-145.8,Offenses committed under age 18,other,0,AOC 2025 Expunctions Report
+2020-21,15A-145.8(A),Offenses committed under age 18,other,24,AOC 2025 Expunctions Report
+2020-21,15A-145.8(B),Offenses committed under age 18,other,1,AOC 2025 Expunctions Report
+2020-21,15A-145.8A,Convictions at age 16-17 (Second Chance Act),youth_conviction,234,AOC 2025 Expunctions Report
+2020-21,15A-145.9,Other (see statute),other,2,AOC 2025 Expunctions Report
+2020-21,15A-146,Dismissal / not guilty (general),petition_nonconviction,94,AOC 2025 Expunctions Report
+2020-21,15A-146(A/A1),"Dismissal / not guilty, by petition",petition_nonconviction,13194,AOC 2025 Expunctions Report
+2020-21,15A-146(A2),"Dismissal / not guilty, by petition",petition_nonconviction,542,AOC 2025 Expunctions Report
+2020-21,15A-146(A4),Automatic: dismissal / not guilty,automatic,0,AOC 2025 Expunctions Report
+2020-21,15A-147,Identity theft / mistaken identity,other,1,AOC 2025 Expunctions Report
+2020-21,15A-147(A),Identity theft / mistaken identity,other,16,AOC 2025 Expunctions Report
+2020-21,15A-147(A1),Identity theft / mistaken identity,other,1087,AOC 2025 Expunctions Report
+2020-21,15A-148,DNA records,other,1,AOC 2025 Expunctions Report
+2020-21,15A-149,Pardon of innocence,other,1,AOC 2025 Expunctions Report
+2021-22,15A-145,"Misdemeanor, first offender under 18",other,0,AOC 2025 Expunctions Report
+2021-22,15A-145(A),"Misdemeanor, first offender under 18",other,45,AOC 2025 Expunctions Report
+2021-22,15A-145.1,"Gang offense, under 18",other,0,AOC 2025 Expunctions Report
+2021-22,15A-145.2,"Drug offenses, first offender",other,7,AOC 2025 Expunctions Report
+2021-22,15A-145.2(A),"Drug offenses, first offender",other,15,AOC 2025 Expunctions Report
+2021-22,15A-145.2(B),"Drug offenses, first offender",other,7,AOC 2025 Expunctions Report
+2021-22,15A-145.2(C),"Drug offenses, first offender",other,20,AOC 2025 Expunctions Report
+2021-22,15A-145.3,Toxic vapors,other,0,AOC 2025 Expunctions Report
+2021-22,15A-145.3(A),Toxic vapors,other,0,AOC 2025 Expunctions Report
+2021-22,15A-145.3(B),Toxic vapors,other,1,AOC 2025 Expunctions Report
+2021-22,15A-145.3(C),Toxic vapors,other,2,AOC 2025 Expunctions Report
+2021-22,15A-145.4,"Nonviolent felony, under 18",other,16,AOC 2025 Expunctions Report
+2021-22,15A-145.5,Nonviolent misdemeanors/felonies (adult convictions),adult_conviction,1627,AOC 2025 Expunctions Report
+2021-22,15A-145.6,Prostitution,other,2,AOC 2025 Expunctions Report
+2021-22,15A-145.7,Human trafficking victims,other,1,AOC 2025 Expunctions Report
+2021-22,15A-145.8,Offenses committed under age 18,other,0,AOC 2025 Expunctions Report
+2021-22,15A-145.8(A),Offenses committed under age 18,other,24,AOC 2025 Expunctions Report
+2021-22,15A-145.8(B),Offenses committed under age 18,other,14,AOC 2025 Expunctions Report
+2021-22,15A-145.8A,Convictions at age 16-17 (Second Chance Act),youth_conviction,8612,AOC 2025 Expunctions Report
+2021-22,15A-145.9,Other (see statute),other,4,AOC 2025 Expunctions Report
+2021-22,15A-146,Dismissal / not guilty (general),petition_nonconviction,4,AOC 2025 Expunctions Report
+2021-22,15A-146(A/A1),"Dismissal / not guilty, by petition",petition_nonconviction,15017,AOC 2025 Expunctions Report
+2021-22,15A-146(A2),"Dismissal / not guilty, by petition",petition_nonconviction,750,AOC 2025 Expunctions Report
+2021-22,15A-146(A4),Automatic: dismissal / not guilty,automatic,395055,AOC 2025 Expunctions Report
+2021-22,15A-147,Identity theft / mistaken identity,other,0,AOC 2025 Expunctions Report
+2021-22,15A-147(A),Identity theft / mistaken identity,other,11,AOC 2025 Expunctions Report
+2021-22,15A-147(A1),Identity theft / mistaken identity,other,690,AOC 2025 Expunctions Report
+2021-22,15A-148,DNA records,other,0,AOC 2025 Expunctions Report
+2021-22,15A-149,Pardon of innocence,other,1,AOC 2025 Expunctions Report
+2022-23,15A-145,"Misdemeanor, first offender under 18",other,0,AOC 2025 Expunctions Report
+2022-23,15A-145(A),"Misdemeanor, first offender under 18",other,22,AOC 2025 Expunctions Report
+2022-23,15A-145.1,"Gang offense, under 18",other,0,AOC 2025 Expunctions Report
+2022-23,15A-145.2,"Drug offenses, first offender",other,8,AOC 2025 Expunctions Report
+2022-23,15A-145.2(A),"Drug offenses, first offender",other,5,AOC 2025 Expunctions Report
+2022-23,15A-145.2(B),"Drug offenses, first offender",other,3,AOC 2025 Expunctions Report
+2022-23,15A-145.2(C),"Drug offenses, first offender",other,22,AOC 2025 Expunctions Report
+2022-23,15A-145.3,Toxic vapors,other,0,AOC 2025 Expunctions Report
+2022-23,15A-145.3(A),Toxic vapors,other,0,AOC 2025 Expunctions Report
+2022-23,15A-145.3(B),Toxic vapors,other,0,AOC 2025 Expunctions Report
+2022-23,15A-145.3(C),Toxic vapors,other,0,AOC 2025 Expunctions Report
+2022-23,15A-145.4,"Nonviolent felony, under 18",other,10,AOC 2025 Expunctions Report
+2022-23,15A-145.5,Nonviolent misdemeanors/felonies (adult convictions),adult_conviction,3752,AOC 2025 Expunctions Report
+2022-23,15A-145.6,Prostitution,other,3,AOC 2025 Expunctions Report
+2022-23,15A-145.7,Human trafficking victims,other,0,AOC 2025 Expunctions Report
+2022-23,15A-145.8,Offenses committed under age 18,other,0,AOC 2025 Expunctions Report
+2022-23,15A-145.8(A),Offenses committed under age 18,other,17,AOC 2025 Expunctions Report
+2022-23,15A-145.8(B),Offenses committed under age 18,other,6,AOC 2025 Expunctions Report
+2022-23,15A-145.8A,Convictions at age 16-17 (Second Chance Act),youth_conviction,1428,AOC 2025 Expunctions Report
+2022-23,15A-145.9,Other (see statute),other,0,AOC 2025 Expunctions Report
+2022-23,15A-146,Dismissal / not guilty (general),petition_nonconviction,3,AOC 2025 Expunctions Report
+2022-23,15A-146(A/A1),"Dismissal / not guilty, by petition",petition_nonconviction,16353,AOC 2025 Expunctions Report
+2022-23,15A-146(A2),"Dismissal / not guilty, by petition",petition_nonconviction,477,AOC 2025 Expunctions Report
+2022-23,15A-146(A4),Automatic: dismissal / not guilty,automatic,55908,AOC 2025 Expunctions Report
+2022-23,15A-147,Identity theft / mistaken identity,other,6,AOC 2025 Expunctions Report
+2022-23,15A-147(A),Identity theft / mistaken identity,other,1,AOC 2025 Expunctions Report
+2022-23,15A-147(A1),Identity theft / mistaken identity,other,449,AOC 2025 Expunctions Report
+2022-23,15A-148,DNA records,other,0,AOC 2025 Expunctions Report
+2022-23,15A-149,Pardon of innocence,other,0,AOC 2025 Expunctions Report
+2023-24,15A-145,"Misdemeanor, first offender under 18",other,328,AOC 2025 Expunctions Report
+2023-24,15A-145(A),"Misdemeanor, first offender under 18",other,39,AOC 2025 Expunctions Report
+2023-24,15A-145.1,"Gang offense, under 18",other,0,AOC 2025 Expunctions Report
+2023-24,15A-145.2,"Drug offenses, first offender",other,15,AOC 2025 Expunctions Report
+2023-24,15A-145.2(A),"Drug offenses, first offender",other,11,AOC 2025 Expunctions Report
+2023-24,15A-145.2(B),"Drug offenses, first offender",other,1,AOC 2025 Expunctions Report
+2023-24,15A-145.2(C),"Drug offenses, first offender",other,20,AOC 2025 Expunctions Report
+2023-24,15A-145.3,Toxic vapors,other,1,AOC 2025 Expunctions Report
+2023-24,15A-145.3(A),Toxic vapors,other,0,AOC 2025 Expunctions Report
+2023-24,15A-145.3(B),Toxic vapors,other,1,AOC 2025 Expunctions Report
+2023-24,15A-145.3(C),Toxic vapors,other,0,AOC 2025 Expunctions Report
+2023-24,15A-145.4,"Nonviolent felony, under 18",other,6,AOC 2025 Expunctions Report
+2023-24,15A-145.5,Nonviolent misdemeanors/felonies (adult convictions),adult_conviction,3670,AOC 2025 Expunctions Report
+2023-24,15A-145.6,Prostitution,other,1,AOC 2025 Expunctions Report
+2023-24,15A-145.7,Human trafficking victims,other,0,AOC 2025 Expunctions Report
+2023-24,15A-145.8,Offenses committed under age 18,other,2,AOC 2025 Expunctions Report
+2023-24,15A-145.8(A),Offenses committed under age 18,other,21,AOC 2025 Expunctions Report
+2023-24,15A-145.8(B),Offenses committed under age 18,other,5,AOC 2025 Expunctions Report
+2023-24,15A-145.8A,Convictions at age 16-17 (Second Chance Act),youth_conviction,2466,AOC 2025 Expunctions Report
+2023-24,15A-145.9,Other (see statute),other,4,AOC 2025 Expunctions Report
+2023-24,15A-146,Dismissal / not guilty (general),petition_nonconviction,47,AOC 2025 Expunctions Report
+2023-24,15A-146(A/A1),"Dismissal / not guilty, by petition",petition_nonconviction,37614,AOC 2025 Expunctions Report
+2023-24,15A-146(A2),"Dismissal / not guilty, by petition",petition_nonconviction,961,AOC 2025 Expunctions Report
+2023-24,15A-146(A4),Automatic: dismissal / not guilty,automatic,0,AOC 2025 Expunctions Report
+2023-24,15A-147,Identity theft / mistaken identity,other,15,AOC 2025 Expunctions Report
+2023-24,15A-147(A),Identity theft / mistaken identity,other,23,AOC 2025 Expunctions Report
+2023-24,15A-147(A1),Identity theft / mistaken identity,other,1206,AOC 2025 Expunctions Report
+2023-24,15A-148,DNA records,other,1,AOC 2025 Expunctions Report
+2023-24,15A-149,Pardon of innocence,other,0,AOC 2025 Expunctions Report
+2024-25,15A-145,"Misdemeanor, first offender under 18",other,24,AOC 2025 Expunctions Report
+2024-25,15A-145(A),"Misdemeanor, first offender under 18",other,52,AOC 2025 Expunctions Report
+2024-25,15A-145.1,"Gang offense, under 18",other,0,AOC 2025 Expunctions Report
+2024-25,15A-145.2,"Drug offenses, first offender",other,20,AOC 2025 Expunctions Report
+2024-25,15A-145.2(A),"Drug offenses, first offender",other,7,AOC 2025 Expunctions Report
+2024-25,15A-145.2(B),"Drug offenses, first offender",other,2,AOC 2025 Expunctions Report
+2024-25,15A-145.2(C),"Drug offenses, first offender",other,8,AOC 2025 Expunctions Report
+2024-25,15A-145.3,Toxic vapors,other,0,AOC 2025 Expunctions Report
+2024-25,15A-145.3(A),Toxic vapors,other,0,AOC 2025 Expunctions Report
+2024-25,15A-145.3(B),Toxic vapors,other,0,AOC 2025 Expunctions Report
+2024-25,15A-145.3(C),Toxic vapors,other,0,AOC 2025 Expunctions Report
+2024-25,15A-145.4,"Nonviolent felony, under 18",other,22,AOC 2025 Expunctions Report
+2024-25,15A-145.5,Nonviolent misdemeanors/felonies (adult convictions),adult_conviction,3599,AOC 2025 Expunctions Report
+2024-25,15A-145.6,Prostitution,other,6,AOC 2025 Expunctions Report
+2024-25,15A-145.7,Human trafficking victims,other,2,AOC 2025 Expunctions Report
+2024-25,15A-145.8,Offenses committed under age 18,other,7,AOC 2025 Expunctions Report
+2024-25,15A-145.8(A),Offenses committed under age 18,other,25,AOC 2025 Expunctions Report
+2024-25,15A-145.8(B),Offenses committed under age 18,other,1,AOC 2025 Expunctions Report
+2024-25,15A-145.8A,Convictions at age 16-17 (Second Chance Act),youth_conviction,568,AOC 2025 Expunctions Report
+2024-25,15A-145.9,Other (see statute),other,11,AOC 2025 Expunctions Report
+2024-25,15A-146,Dismissal / not guilty (general),petition_nonconviction,104,AOC 2025 Expunctions Report
+2024-25,15A-146(A/A1),"Dismissal / not guilty, by petition",petition_nonconviction,31030,AOC 2025 Expunctions Report
+2024-25,15A-146(A2),"Dismissal / not guilty, by petition",petition_nonconviction,707,AOC 2025 Expunctions Report
+2024-25,15A-146(A4),Automatic: dismissal / not guilty,automatic,1381128,AOC 2025 Expunctions Report
+2024-25,15A-147,Identity theft / mistaken identity,other,47,AOC 2025 Expunctions Report
+2024-25,15A-147(A),Identity theft / mistaken identity,other,18,AOC 2025 Expunctions Report
+2024-25,15A-147(A1),Identity theft / mistaken identity,other,888,AOC 2025 Expunctions Report
+2024-25,15A-148,DNA records,other,0,AOC 2025 Expunctions Report
+2024-25,15A-149,Pardon of innocence,other,6,AOC 2025 Expunctions Report

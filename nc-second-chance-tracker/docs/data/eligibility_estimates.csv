@@ -1,0 +1,5 @@
+metric,value,as_of,source,url,notes
+people_with_records,2000000,2020,Paper Prisons,https://paperprisons.org/states/pdfs/reports/The%20North%20Carolina%20Second%20Chance%20Expunction%20Gap.pdf,Estimated from SEARCH repository counts
+people_with_convictions,1200000,2020,Paper Prisons,https://paperprisons.org/states/pdfs/reports/The%20North%20Carolina%20Second%20Chance%20Expunction%20Gap.pdf,
+eligible_to_clear_conviction,271000,2020,Paper Prisons,https://paperprisons.org/states/pdfs/reports/The%20North%20Carolina%20Second%20Chance%20Expunction%20Gap.pdf,Modeled pre-Second Chance Act rules on a 2017-18 sample of 2492 histories; likely an undercount under current law
+conviction_relief_uptake_rate,0.04,2020,Paper Prisons,https://paperprisons.org/states/pdfs/reports/The%20North%20Carolina%20Second%20Chance%20Expunction%20Gap.pdf,Share of eligible people who have received conviction relief

@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tracking North Carolina expunctions, the conviction-relief gap, and Second Chance Act implementation. A Southern Coalition for Social Justice project.">
+<title>NC Second Chance Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one 1080px column; summary tiles → two charts → the gap → timeline → data roadmap → full statute table. Court-record feel: slab display, plain civic body, mono for statute cites. */
+:root{
+  --bg:#f5f6f4; --surface:#ffffff; --fg:#17201d; --muted:#56615c; --faint:#8a948f; --rule:#dfe3e0; --grid:#e9ecea;
+  --accent:#0d5c4f; --accent-soft:#e3efeb; --warn:#9a5b00; --warn-soft:#fbf1e1;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#9aa29e;
+  --display:"Bitter", Georgia, "Times New Roman", serif;
+  --body:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121715; --surface:#1a201e; --fg:#eef2f0; --muted:#aeb8b3; --faint:#7d8883; --rule:#2c3532; --grid:#252d2a;
+  --accent:#5cc4ae; --accent-soft:#1d322d; --warn:#e3a24a; --warn-soft:#2e2517;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#6f7874; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121715; --surface:#1a201e; --fg:#eef2f0; --muted:#aeb8b3; --faint:#7d8883; --rule:#2c3532; --grid:#252d2a;
+  --accent:#5cc4ae; --accent-soft:#1d322d; --warn:#e3a24a; --warn-soft:#2e2517;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#6f7874; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 var(--body);padding-inline:16px;padding-block:28px 56px}
+.wrap{max-width:1080px;margin:0 auto;display:grid;gap:40px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.2}
+h1{font-size:clamp(28px,4.4vw,40px);font-weight:700}
+h2{font-size:22px;font-weight:700}
+h3{font-size:16px;font-weight:700}
+p{margin:0;max-width:68ch}
+.eyebrow{font:600 12px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.muted{color:var(--muted)}
+.mono{font-family:var(--mono);font-size:.92em}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+header{display:grid;gap:12px;padding-bottom:24px;border-bottom:1px solid var(--rule)}
+.badge{display:inline-flex;align-items:center;gap:6px;font:600 12px/1 var(--body);color:var(--warn);background:var(--warn-soft);padding:6px 10px;border-radius:999px;width:fit-content}
+section{display:grid;gap:16px}
+.sechead{display:grid;gap:6px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.tile{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:18px;display:grid;gap:6px;align-content:start}
+.tile .num{font:700 34px/1.05 var(--display);font-variant-numeric:tabular-nums}
+.tile .lbl{font-weight:600}
+.tile .src{font-size:12px;color:var(--faint)}
+.tile.flag{border-color:var(--warn)}
+.tile.flag .num{color:var(--warn)}
+.panel{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:20px;display:grid;gap:14px;min-width:0}
+.charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:16px}
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:13px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:10px;height:10px;border-radius:2px;display:inline-block}
+.chart{position:relative;min-width:0}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.chart text{font-family:var(--body);font-size:11px;fill:var(--muted)}
+.chart .val{fill:var(--fg);font-weight:600}
+.tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--bg);font-size:12px;line-height:1.45;padding:8px 10px;border-radius:6px;min-width:170px;transform:translate(-50%,-100%);white-space:nowrap;z-index:2}
+.tip b{font-variant-numeric:tabular-nums}
+.tip .r{display:flex;justify-content:space-between;gap:14px}
+.note{font-size:13px;color:var(--muted)}
+.gapviz{display:grid;gap:10px}
+.gaprow{display:grid;grid-template-columns:minmax(120px,190px) 1fr;gap:12px;align-items:center}
+.gaprow .bar{height:22px;border-radius:0 4px 4px 0;background:var(--s3)}
+.gaprow .bar.big{background:var(--s2)}
+.gaprow .lab{font-size:13px}
+.gaprow .lab b{display:block;font:700 18px/1.2 var(--display);font-variant-numeric:tabular-nums}
+.timeline{list-style:none;margin:0;padding:0;display:grid;gap:0;border-left:2px solid var(--rule);margin-left:6px}
+.timeline li{position:relative;padding:0 0 18px 20px;display:grid;gap:2px}
+.timeline li::before{content:"";position:absolute;left:-7px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:2px solid var(--accent)}
+.timeline li.stop::before{border-color:var(--warn);background:var(--warn)}
+.timeline .when{font:500 12px/1.4 var(--mono);color:var(--muted)}
+.timeline .what{font-weight:600}
+.road{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px}
+.road .panel{gap:8px;align-content:start}
+.phase{font:600 11px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.road ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:14px}
+.status{display:inline-block;font:600 11px/1 var(--body);padding:4px 8px;border-radius:999px;width:fit-content}
+.status.done{background:var(--accent-soft);color:var(--accent)}
+.status.next{background:var(--warn-soft);color:var(--warn)}
+.status.later{background:var(--grid);color:var(--muted)}
+details{background:var(--surface);border:1px solid var(--rule);border-radius:8px}
+summary{cursor:pointer;padding:14px 18px;font-weight:600}
+.tablewrap{overflow-x:auto;padding:0 18px 18px}
+table{border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums;width:100%;min-width:760px}
+th,td{padding:6px 8px;text-align:right;border-bottom:1px solid var(--grid);white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+td:first-child{font-family:var(--mono)}
+td:nth-child(2){text-align:left;font-family:var(--body);white-space:normal;min-width:180px}
+thead th{color:var(--muted);font-weight:600;border-bottom:1px solid var(--rule)}
+tr.total td{font-weight:700;border-top:1px solid var(--rule)}
+tr.hl td{background:var(--accent-soft)}
+.toggle{display:inline-flex;border:1px solid var(--rule);border-radius:6px;overflow:hidden;width:fit-content}
+.toggle button{font:500 13px var(--body);background:transparent;color:var(--muted);border:0;padding:6px 12px;cursor:pointer}
+.toggle button[aria-pressed="true"]{background:var(--accent);color:var(--surface)}
+.sources{font-size:13px;color:var(--muted);display:grid;gap:4px}
+.sources ol{margin:0;padding-left:20px;display:grid;gap:4px}
+@media (prefers-reduced-motion:no-preference){.bar,rect.m{transition:opacity .15s}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+<header>
+  <span class="badge" id="badge">Prototype · built from public reports</span>
+  <div class="eyebrow">Southern Coalition for Social Justice · Supporting Second Chances</div>
+  <h1>NC Second Chance Tracker</h1>
+  <p class="muted">How many North Carolinians are getting their records cleared, by which route, and how far that falls short of who is eligible. Built from the Administrative Office of the Courts' annual expunction reports to the General Assembly (G.S. 15A-160) and published eligibility research.</p>
+</header>
+
+<section aria-label="Summary">
+    <div class="tiles" id="tiles"><div class="tile"><div class="lbl muted">Loading data…</div></div></div>
+</section>
+
+<section aria-labelledby="h-trend">
+  <div class="sechead">
+    <h2 id="h-trend">Who is getting relief, and how</h2>
+    <p class="muted">Automatic expunction swamps everything else when it is running, and drops to zero when the legislature pauses it. Petition-based relief, especially for convictions, moves slowly.</p>
+  </div>
+  <div class="charts">
+    <div class="panel">
+      <h3>All expunctions by route, per fiscal year</h3>
+      <div class="legend"><span><i class="sw" style="background:var(--s1)"></i>Automatic (dismissals, acquittals)</span><span><i class="sw" style="background:var(--s2)"></i>By petition (all types)</span></div>
+      <div class="chart" id="c1"></div>
+      <p class="note">Automatic expunction was paused Aug 2022 – Jul 2024. FY 2024–25 includes the backlog of cases from the pause, processed starting July 23, 2024.</p>
+    </div>
+    <div class="panel">
+      <h3>Petition expunctions by type, per fiscal year</h3>
+      <div class="legend"><span><i class="sw" style="background:var(--s2)"></i>Dismissals / not guilty</span><span><i class="sw" style="background:var(--s3)"></i>Adult convictions (145.5)</span><span><i class="sw" style="background:var(--s4)"></i>Under-18 convictions (145.8A)</span><span><i class="sw" style="background:var(--s5)"></i>Other statutes</span></div>
+      <div class="chart" id="c2"></div>
+      <p class="note">Excludes automatic expunctions. Conviction relief (aqua) more than tripled after the Second Chance Act's petition expansions took effect in Dec 2020, but remains a few thousand people a year.</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="h-gap">
+  <div class="sechead">
+    <h2 id="h-gap">The conviction gap</h2>
+    <p class="muted">Clearing dismissals is now largely automatic. Clearing convictions still requires a petition, a $175 fee, a hearing, and a waiting period, and very few eligible people get through it.</p>
+  </div>
+  <div class="panel">
+    <div class="gapviz" id="gap"></div>
+    <p class="note">At the FY 2024–25 rate, granting relief to everyone already estimated eligible would take about <b id="yrs">…</b> years, before counting anyone who becomes eligible in the meantime. The eligibility estimate (Santa Clara Law's Paper Prisons project) modeled pre-2020 rules from a 2017–18 sample of 2,492 criminal histories; the Second Chance Act's expansions likely make the true number higher. Refreshing this estimate with current law and AOC court data is the most important upgrade for this dashboard.</p>
+  </div>
+</section>
+
+<section aria-labelledby="h-time">
+  <div class="sechead">
+    <h2 id="h-time">Second Chance Act implementation</h2>
+    <p class="muted">The law passed unanimously in 2020. Its automatic provisions have spent nearly as long paused as running.</p>
+  </div>
+  <div class="panel">
+    <ol class="timeline" id="timeline"></ol>
+  </div>
+</section>
+
+<section aria-labelledby="h-road">
+  <div class="sechead">
+    <h2 id="h-road">What this dashboard needs next</h2>
+    <p class="muted">The public reports give statewide counts by statute only. The questions SCSJ most needs answered (who is left behind, and where) require more granular data.</p>
+  </div>
+  <div class="road">
+    <div class="panel">
+      <span class="phase">Phase 1</span><span class="status done">This prototype</span>
+      <h3>Statewide trends from public reports</h3>
+      <ul>
+        <li>AOC annual expunction reports, FY 2017–18 onward</li>
+        <li>Published eligibility estimates</li>
+        <li>Implementation timeline</li>
+        <li>Add FY 2025–26 when the Sept 2026 report is posted</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <span class="phase">Phase 2</span><span class="status next">Public records request</span>
+      <h3>County and demographic breakdowns</h3>
+      <ul>
+        <li>Expunctions by county, statute, and year (AOC)</li>
+        <li>Race, ethnicity, sex, and age of petitioners</li>
+        <li>Petitions filed vs. granted vs. denied; fee waivers</li>
+        <li>Map: conviction relief per 10,000 adults by county</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <span class="phase">Phase 3</span><span class="status later">Research partnership</span>
+      <h3>Who is eligible now, and who is left out</h3>
+      <ul>
+        <li>Person-level eligibility under current law, using AOC ACIS/eCourts data (UNC Criminal Justice Innovation Lab already models this)</li>
+        <li>Gap by race and county</li>
+        <li>Policy scenarios, e.g. automatic conviction relief</li>
+        <li>Downstream compliance: are agencies, sheriffs, and background-check sites removing expunged records?</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<details>
+  <summary>Full table: expunctions by statute, FY 2017–18 to 2024–25</summary>
+  <div class="tablewrap"><table id="tbl"></table></div>
+</details>
+
+<div class="sources">
+  <h3>Sources</h3>
+  <ol>
+    <li><a href="https://webservices.ncleg.gov/ViewDocSiteFile/101052" target="_blank" rel="noopener">NC AOC, 2025 Expunctions Report</a> (FY 2020–21 to 2024–25)</li>
+    <li><a href="https://webservices.ncleg.gov/ViewDocSiteFile/71510" target="_blank" rel="noopener">NC AOC, 2022 Expunctions Report</a> (FY 2017–18 to 2019–20)</li>
+    <li><a href="https://paperprisons.org/states/pdfs/reports/The%20North%20Carolina%20Second%20Chance%20Expunction%20Gap.pdf" target="_blank" rel="noopener">Paper Prisons, The North Carolina Second Chance Expunction Gap</a></li>
+    <li><a href="https://www.axios.com/local/raleigh/2026/07/22/wake-county-mug-shots-arrest-records" target="_blank" rel="noopener">Axios Raleigh, Wake County ending era of online mug shots (Jul 22, 2026)</a></li>
+    <li><a href="https://www.sog.unc.edu/blogs/nc-criminal-law/new-dashboard-shows-impact-record-clearance-policies-north-carolina" target="_blank" rel="noopener">UNC Criminal Justice Innovation Lab, NC Record Clearance Dashboard</a></li>
+  </ol>
+  <p>Fiscal years run July 1 – June 30. Counts are expunction orders/cases, not unique people.</p>
+</div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
